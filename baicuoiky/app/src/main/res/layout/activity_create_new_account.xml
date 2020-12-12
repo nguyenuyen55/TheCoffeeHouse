@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+
+    android:layout_width="match_parent"
+android:background="#e5e5e5"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:src="@drawable/loginbg" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+android:id="@+id/h1"
+                android:weightSum="6">
+
+                <EditText
+                    android:drawableLeft="@drawable/ic_username"
+                    android:layout_weight="2"
+                    android:hint="Tên đăng nhập"
+                    android:textColorHint="#ffcd7a"
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></EditText>
+                <EditText
+                    android:textColorHint="#ffcd7a"
+                    android:id="@+id/sdt1"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:layout_weight="2"
+                    android:layout_below="@+id/username"
+                    android:hint="Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></EditText>
+                <EditText
+                    android:textColorHint="#ffcd7a"
+                    android:id="@+id/password"
+                    android:drawableLeft="@drawable/ic_phon2"
+                    android:layout_weight="2"
+                    android:layout_below="@+id/username"
+                    android:hint="Số điẹn thoại"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></EditText>
+                <EditText
+                    android:textColorHint="#ffcd7a"
+                    android:id="@+id/sdt"
+                    android:drawableLeft="@drawable/ic_userpass"
+                    android:layout_weight="2"
+                    android:layout_below="@+id/username"
+                    android:hint="Mật khẩu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></EditText>
+                <Button
+
+                    android:textColor="#514848"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/sign1"
+                    android:background="@drawable/roundbutton"
+                    android:text="Sign Up"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"></Button>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:padding="10dp"
+                    android:text="Hoặc đăng kí cách khác"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginBottom="30dp"
+                    android:id="@+id/khac"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/fbbg"
+                        android:text="Facebook"
+                        android:layout_marginRight="30dp"
+                        android:textColor="#fff"/>
+                    <Button
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/emailbg"
+                        android:text="Email"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/su1"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#7E7676"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I ready have account ? sign in"></TextView>
+            </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#FF3F51B5"
+        android:text="welcome "/>
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:textSize="40dp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"/>
+
+
+
+    </RelativeLayout>
+
+
